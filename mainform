@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+
+<head>
+  <h1 id="title" class="head">Galactic Empire Survey</h1>
+  <p id="description" class="head">Tell us what you think of the empire.</p>
+</head>
+
+<body>
+  <form id="survey-form" value="earcheese">
+    <fieldset>
+      <h2>Personal Information</h2>
+      <label class="bg-dark" for="name" id="name-label">Enter your name: <input id="name" type="text" placeholder="e.g. Johdo Buunk" required /></label>
+      <label class="bg-dark"id="email-label" for="email">Enter your email address: <input id="email" type="email" placeholder="e.g. jbuunk3@holo.net" required /></label>
+      <label class="bg-dark" id="number-label" for="number">Enter your age (12-1700): <input id="number" type="number" min="12" max="1700"  required placeholder="27" />
+    <label class="bg-dark"id="planet-label" for="planet">Planet of Residence: <input id="planet" type="text" placeholder="e.g. Tatooine"></label>
+      <label class="bg-dark"for="dropdown"> Species (optional): <select id="dropdown">
+      <option></option>
+      <option>Human</option>
+      <option>Twi'Lek</option>
+      <option>Duros</option>
+      <option>Jawa</option>
+      <option>Ewok</option>
+      <option>Geonosian</option>
+      <option>Gungan</option>
+      <option>Togruta</option>
+      <option>Hutt</option>
+      <option>Neimoidian</option>
+      <option>Noghri</option>
+      <option>Tusken</option>
+      <option>Wookie</option>
+      <option>Ithorian</option>
+      <option>Zabrak</option>
+      <option>Hybrid</option>
+      <option>Other</option>
+    </select></label>
+      <label for="male"><input type="radio" name="gender" id="male" value="male" />Male</label>
+      <label for="male"><input type="radio" name="gender" id="female" value="female" />Female</label>
+      <label for="male"><input type="radio" name="gender" id="na" value="na" />None (for genderless species)</label>
+      <label for="TOS"><input type="checkbox" value="TOS" required /> I accept Imperial Terms of Service.</label>
+      <label for="military"><input type="checkbox" value="military" id="military" /> I'm an Imperial Military Personel of some kind.</label>
+    </fieldset>
+    <fieldset>
+      <h2>What You Like About The Empire</h2>
+      <p>Choose as many is you would like.</p>
+      <label><input type="checkbox" value="order">Order</label>
+      <label><input type="checkbox" value="opportunity">Opportunity</label>
+      <label><input type="checkbox" value="Prot4">Protection</label>
+      <label><input type="checkbox" value="Secure">Security</label>
+      <label><input type="checkbox" value="economiccrash">Economy</label>
+      <label><input type="checkbox" value="ALDERAAN">Employment Rates</label>
+      <label><input type="checkbox" value="Polise">Lack of Crime</label>
+      <label><input type="checkbox" value="GENERALKENOBI">Military</label>
+      <label><input type="checkbox" value="goodsoldiersfolloworders">Laws</label>
+    </fieldset>
+    <fieldset>
+      <h2>What You Think Could Be Improved</h2>
+      <p>Please be honest!</p>
+      <label><input type="checkbox" value="66">More Order</label>
+      <label><input type="checkbox" value="rahnbow">More Opportunity</label>
+      <label><input type="checkbox" value="hehe">More Protection</label>
+      <label><input type="checkbox" value="camera">More Security</label>
+      <label><input type="checkbox" value="donaldtrump">Better Economy</label>
+      <label><input type="checkbox" value="getoffthestreetyoubum">Higher Employment Rates</label>
+      <label><input type="checkbox" value="imapolice">Less Crime</label>
+      <label><input type="checkbox" value="hellothere">More Military</label>
+      <label><input type="checkbox" value="ITSTHELAW">More Laws</label>
+    </fieldset>
+    <fieldset>
+      <h2>Personal Notes</h2>
+      <textarea required></textarea>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+</body>
+
+</html>
